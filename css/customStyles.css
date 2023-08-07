@@ -12,6 +12,10 @@ body
 #home .fp-slide,
 #home .fp-tableCell,
 
+#experience,
+#experience .fp-slide,
+#experience .fp-tableCell,
+
 #work,
 #work .fp-slide,
 #work .fp-tableCell,
@@ -46,7 +50,7 @@ h1,h2,h3,h4,h5
 /* end all heading */
 
 /* start all section */
-#work, #about, #portfolio, #contact
+#work, #experience, #about, #portfolio, #contact
     {
         padding-top: 100px;
         padding-bottom: 120px;
@@ -203,7 +207,48 @@ h1,h2,h3,h4,h5
     }
 /* end home */
 
+/* start experience */
+#experience h2
+    {
+        text-align: center;
+    }
+
+#experience .media
+    {
+      margin-top: 30px;
+    }
+	
+#experience .media .fa
+    {
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        color: #D43F52;
+        font-size: 24px;
+        margin-right: 24px;
+        width: 60px;
+        height: 60px;
+        line-height: 55px;
+        text-align: center;
+        vertical-align: middle;
+        transition: all 0.4s ease-in;
+    }
+#experience .media .fa:hover
+    {
+        background: #ffffff;
+        cursor: pointer;
+    }
+#experience .media .media-heading
+    {
+        font-weight: 600;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+/* end experience */
+
 /* start work */
+#work {
+    background: #1a1a1a;
+}
 #work h2
     {
         text-align: center;
@@ -283,7 +328,6 @@ h1,h2,h3,h4,h5
 /* start portfolio */
 #portfolio
     {
-        background: #1a1a1a;
         text-align: center;
     }
 #portfolio h2
@@ -292,11 +336,11 @@ h1,h2,h3,h4,h5
     }
 #portfolio h4
     {
-        font-size: medium;
+        font-size: 1.75vw
     }
 #portfolio h5
     {
-        font-size: small;
+        font-size: 1.25vw;
     }
 #portfolio .portfolio-thumb
     {
@@ -327,7 +371,9 @@ h1,h2,h3,h4,h5
 /* end portfolio */
 
 /* start contact */
-
+#contact {
+    background: #1a1a1a;
+}
 #contact address
     {
       padding-bottom: 18px;
